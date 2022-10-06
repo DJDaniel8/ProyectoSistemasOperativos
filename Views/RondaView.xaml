@@ -46,8 +46,8 @@
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTextColumn Header="T de Llegada" FontSize="15" Width="*" Binding="{Binding TiempoLlegada}"/>
-                <DataGridTextColumn Header="Tiempo de CPU" FontSize="15" Width="*" Binding="{Binding TiempoCPU}"/>
+                <DataGridTextColumn Header="T de Llegada" FontSize="15" Width="*" Binding="{Binding TiempoLlegada, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Tiempo de CPU" FontSize="15" Width="*" Binding="{Binding TiempoCPU, UpdateSourceTrigger=PropertyChanged}"/>
                 <DataGridTextColumn Header="T Final" FontSize="15" Width="*" Binding="{Binding TiempoFinal}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="T Retorno" FontSize="15" Width="*" Binding="{Binding TiempoRetorno}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="T Espera" FontSize="15" Width="*" Binding="{Binding TiempoEspera}" IsReadOnly="True"/>
